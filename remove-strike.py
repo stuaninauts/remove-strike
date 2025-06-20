@@ -12,7 +12,7 @@ def baixar_html_e_limpar(url):
     return soup.prettify()
 
 st.title("Remover coisa chata da pagina da lei chata")
-st.image("./foto.png", use_column_width=False, width=200)
+st.image("./foto.png", width=200)
 
 url = st.text_input("Insira a URL da página:")
 nome_arquivo = st.text_input("Nome do arquivo de saída:", value="saida.html")
