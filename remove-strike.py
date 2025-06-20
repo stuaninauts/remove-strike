@@ -11,8 +11,12 @@ def baixar_html_e_limpar(url):
         tag.decompose()
     return soup.prettify()
 
-st.title("Remover coisa chata da pagina da lei chata")
-st.image("./foto.png", width=200)
+st.title("Remover coisa chata da pagina chata")
+
+cols = st.columns(3)
+cols[0].image("./monkey1.png", width=200)
+cols[1].image("./monkey2.jpg", width=200)
+cols[2].markdown("![happy cat](https://media1.tenor.com/m/_hUq1BSUsiMAAAAC/cat-cute.gif)", width=200)
 
 url = st.text_input("Insira a URL da página:")
 nome_arquivo = st.text_input("Nome do arquivo de saída:", value="saida.html")
